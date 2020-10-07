@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="Cookies.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<meta charset="utf-8">
+	<!-- Weather icons by Adam Whitcroft - http://adamwhitcroft.com/climacons/ -->
+	<!-- Background pattern from http://subtlepatterns.com/ -->
+	<!-- Cookie Manager from http://code.iamkate.com/javascript/using-cookies/ -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+</head>
+<body>
+	<div class="weather-output-wrapper">
+		<div class="weather-output" >
+			<div class="weather-city-wrapper">
+				<form class="location-search-form">
+					<input type="text" placeholder="Search city/country..." id="location-search-bar">
+					<input type="submit" value="Search" id="location-search-submit">
+				</form>
+				<div id="location-search-results"></div>
+				<h2 class="weather-output-city">Search for a city</h2>
+				<p class="weather-output-country"></p>
+			</div>
+			<div class="weather-details-wrapper">
+				<div class="weather-output-weather-type"></div>
+				<div class="weather-type-img-wrapper"></div>
+			</div>
+			<div class="temp-wrapper">
+				<div class="weather-output-current-temp"></div>
+				<div class="lesser-temp-wrapper">
+					<div class="weather-output-avg-temp"></div>
+					<div class="weather-output-min-temp"></div>
+					<div class="weather-output-max-temp"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

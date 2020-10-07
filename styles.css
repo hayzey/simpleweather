@@ -1,0 +1,173 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
+
+html, body {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	/*min-width: 100%;*/
+	/*min-height: 100%;*/
+
+	text-align: center;
+	background: url("images/tweed_2x.png");
+	color: #333;
+}
+
+* {
+	font-family: "Ubuntu", Arial, sans-serif;
+	font-size: 14px;
+}
+
+h1, h2 {
+	color: steelblue;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+	font-style: italic;
+}
+
+.weather-output-wrapper {
+	background: white;
+	min-width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 2em 0;
+	box-shadow: 0 0 50px 10px #222;
+	/*overflow: hidden;*/
+}
+
+.weather-city-wrapper {
+	display: block;
+}
+
+.weather-details-wrapper {
+	display: block;
+	text-align: center;
+}
+
+.weather-details-wrapper div {
+	display: inline-block;
+	vertical-align: center;
+	/*padding: 0 1em;*/
+}
+
+.weather-output-city {
+	font-size: 6em;
+}
+
+.weather-output-weather-type {
+	font-size: 3em;
+	text-align: right;
+	vertical-align: middle;
+	width: 4em;
+	margin-left: -1em;
+}
+
+.weather-type-img-wrapper {
+	width: 12em;
+	display: inline-block;
+	text-align: left;
+}
+
+.weather-details-wrapper img {
+	width: 12em;
+	height: 12em;
+	display: inline-block;
+	margin: -1em 0;
+	vertical-align: middle;
+}
+
+.temp-wrapper {
+	display: block;
+}
+
+.temp-wrapper div {
+	display: inline-block;
+}
+
+.weather-output-current-temp {
+	font-size: 3em;
+	text-align: right;
+	vertical-align: middle;
+	width: 4em;
+	/*margin-right: -4em;*/
+}
+
+.lesser-temp-wrapper {
+	vertical-align: middle;
+	width: 12em;
+	padding-left: 4em;
+	/*font-size: 1.5em;*/
+}
+
+.lesser-temp-wrapper div {
+	text-align: left;
+	display: block;
+}
+
+
+.location-search-form input {
+	/*width: 19em;*/
+	border: 1px solid grey;
+	border-radius: 3px;
+	padding: 0.5em;
+}
+
+.location-search-form button {
+	/*display: block;*/
+	/*width: 200px;*/
+}
+
+#location-search-bar {
+	width: 19em;
+}
+
+#location-search-bar:focus {
+	border-color: steelblue;
+}
+
+#location-search-submit {
+	width: 9em;
+	background: white;
+}
+
+#location-search-submit:hover {
+	background: lightgrey;
+	border-color: steelblue;
+}
+
+#location-search-submit:active {
+	background: lightsteelblue;
+	border-color: steelblue;
+}
+
+.location-choice {
+	/*background: lightgrey;*/
+	border: 0.5px solid steelblue;
+	border-radius: 3px;
+	padding: 0.5em;
+	/*max-width: 300px;*/
+	margin: 0 auto;
+	display: block;
+	width: 25em;
+}
+
+.location-choice:hover {
+	background: lightgrey;
+}
+
+.location-choice:active {
+	background: lightsteelblue;
+}
+
+@media (max-width: 600px) {
+	html, body {
+		background: white;
+	}
+
+	.weather-output-wrapper {
+		box-shadow: none;
+	}
+}
